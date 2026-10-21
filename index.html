@@ -1,136 +1,374 @@
+
 <!doctype html>
 <html lang="ru">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#f7f7f2">
-  <meta name="description" content="Портфолио Виктории — начинающей Python Backend Developer. Учебные проекты на Python, Flask и FastAPI.">
+  <meta name="description" content="Портфолио Виктории — начинающего Python Backend Developer. Учебные проекты на Python, Flask и FastAPI.">
   <title>Виктория — Python Backend Developer</title>
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-  <a class="skip-link" href="#main">Перейти к содержимому</a>
-  <header class="site-header">
-    <div class="header-inner">
-      <a class="wordmark" href="#top" aria-label="Виктория — на главную">V.D<span>.</span></a>
-      <nav class="main-nav" aria-label="Основная навигация">
-        <a href="#about">Обо мне</a>
-        <a href="#projects">Проекты</a>
-        <a href="#skills">Навыки</a>
-        <a href="#contacts">Контакты</a>
-      </nav>
-      <a class="header-github" href="https://github.com/vdmiitriva" target="_blank" rel="noopener noreferrer">
-        GitHub <span aria-hidden="true">↗</span>
-      </a>
-    </div>
+  <header class="header">
+    <a class="logo" href="#home" aria-label="На главную">V</a>
+
+    <nav class="nav" aria-label="Основная навигация">
+      <a href="#projects">Проекты</a>
+      <a href="#about">Обо мне</a>
+      <a href="#contacts">Контакты</a>
+    </nav>
+
+    <a class="header-link" href="https://github.com/vdmiitriva" target="_blank" rel="noopener noreferrer">
+      GitHub <span aria-hidden="true">↗︎</span>
+    </a>
   </header>
 
-  <main id="main">
-    <section class="hero section-wrap" id="top" aria-labelledby="hero-title">
-      <div class="hero-kicker"><span class="status-dot" aria-hidden="true"></span> ПОРТФОЛИО · 2026</div>
-      <h1 id="hero-title">Hello, world! Я Виктория.<br><span>Занимаюсь разработкой на Python.</span></h1>
-      <div class="hero-bottom">
-        <p class="hero-intro">Начинающий backend-разработчик. Изучаю проектирование API, работу с базами данных и создание приложений, решающих реальные задачи.</p>
+  <main>
+    <section class="hero section" id="home">
+      <div class="hero-content">
+        <p class="eyebrow"><span class="status-dot"></span> ПОРТФОЛИО · 2026</p>
+
+        <h1>
+          Hello, world!<br>
+          Я Виктория.
+        </h1>
+
+        <p class="hero-description">
+          <span class="typing-line">
+            <span id="typing-text">Python-разработчик.</span><span class="typing-cursor" aria-hidden="true"></span>
+          </span>
+        </p>
+
+        <p class="hero-text">
+          Изучаю backend-разработку и создаю проекты на Python.
+          Постепенно превращаю знания в работающие приложения.
+        </p>
+
         <div class="hero-actions">
-          <a class="button button-primary" href="#projects">Мои проекты <span aria-hidden="true">↓</span></a>
-          <a class="button button-quiet" href="https://github.com/vdmiitriva" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a>
+          <a class="button button-dark" href="#projects">
+            Смотреть проекты <span aria-hidden="true">↘︎</span>
+          </a>
+          <a class="text-link" href="https://github.com/vdmiitriva" target="_blank" rel="noopener noreferrer">
+            Мой GitHub <span aria-hidden="true">↗︎</span>
+          </a>
         </div>
       </div>
-      <div class="hero-index" aria-hidden="true"><span>PYTHON</span><span>BACKEND</span><span>LEARNING BY BUILDING</span></div>
+
+      <a class="scroll-hint" href="#projects">
+        <span class="scroll-line"></span>
+        ЛИСТАЙТЕ НИЖЕ
+      </a>
     </section>
 
-    <section class="content-section section-wrap" id="about" aria-labelledby="about-title">
-      <div class="section-label"><span>01</span> / ОБО МНЕ</div>
-      <div class="section-content about-layout">
-        <h2 id="about-title">Учусь, создаю,<br>разбираюсь в деталях.</h2>
+    <section class="section projects-section" id="projects">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">МОЯ ПРАКТИКА</p>
+          <h2>Избранные проекты<span class="accent-dot">.</span></h2>
+        </div>
+        <p class="section-note">
+          Учебные работы и проект семестра,<br>
+          в котором я развиваю навыки backend.
+        </p>
+      </div>
+
+      <div class="projects-grid">
+        <article class="project-card project-green">
+          <div class="project-top">
+            <span class="project-index">01 / BACKEND</span>
+            <span class="project-status"><span class="status-dot"></span> В разработке</span>
+          </div>
+
+          <div class="project-symbol symbol-green" aria-hidden="true">
+            <span>01</span>
+            <i></i>
+          </div>
+
+          <p class="project-category">ПРОЕКТ СЕМЕСТРА</p>
+          <h3>StudyFlow</h3>
+          <p class="project-description">
+            Персональный учебный помощник для управления задачами, сроками
+            и учебным расписанием. Backend разрабатывается на FastAPI
+            с использованием PostgreSQL и SQLAlchemy.
+          </p>
+
+          <ul class="tech-list">
+            <li>Python</li>
+            <li>FastAPI</li>
+            <li>PostgreSQL</li>
+            <li>SQLAlchemy</li>
+            <li>Alembic</li>
+            <li>pytest</li>
+          </ul>
+
+          <div class="project-links">
+            <a class="project-link" href="https://github.com/vdmiitriva/studyflow" target="_blank" rel="noopener noreferrer">
+              Смотреть на GitHub <span aria-hidden="true">↗︎</span>
+            </a>
+          </div>
+        </article>
+
+        <article class="project-card project-blue">
+          <div class="project-top">
+            <span class="project-index">02 / WEB</span>
+            <span class="project-label">Веб-приложение</span>
+          </div>
+
+          <div class="project-symbol symbol-blue" aria-hidden="true">
+            <span>02</span>
+            <i></i>
+          </div>
+
+          <p class="project-category">АНГЛИЙСКИЙ ЯЗЫК</p>
+          <h3>Eng Tenses</h3>
+          <p class="project-description">
+            Веб-приложение для практики английской грамматики,
+            созданное на Flask. Проект развёрнут в интернете.
+          </p>
+
+          <ul class="tech-list">
+            <li>Python</li>
+            <li>Flask</li>
+            <li>HTML</li>
+            <li>CSS</li>
+          </ul>
+
+          <div class="project-links">
+            <a class="project-link" href="https://eng-tenses.onrender.com/" target="_blank" rel="noopener noreferrer">
+              Открыть сайт <span aria-hidden="true">↗︎</span>
+            </a>
+            <a class="project-link" href="https://github.com/vdmiitriva/eng-tenses" target="_blank" rel="noopener noreferrer">
+              GitHub <span aria-hidden="true">↗︎</span>
+            </a>
+            <a class="project-link" href="https://t.me/EN_GameBot" target="_blank" rel="noopener noreferrer">
+              Telegram-бот <span aria-hidden="true">↗︎</span>
+            </a>
+          </div>
+        </article>
+
+        <article class="project-card project-brown">
+          <div class="project-top">
+            <span class="project-index">03 / DATA</span>
+            <span class="project-label">Обработка данных</span>
+          </div>
+
+          <div class="project-symbol symbol-brown" aria-hidden="true">
+            <span>03</span>
+            <i></i>
+          </div>
+
+          <p class="project-category">АНАЛИЗ ОПЕРАЦИЙ</p>
+          <h3>BankProject</h3>
+          <p class="project-description">
+            Приложение для анализа банковских операций: поиск транзакций,
+            формирование сводной информации о расходах и подготовка данных
+            для главной страницы.
+          </p>
+
+          <ul class="tech-list">
+            <li>Python</li>
+            <li>pandas</li>
+            <li>JSON</li>
+            <li>Excel</li>
+          </ul>
+
+          <div class="project-links">
+            <a class="project-link" href="https://github.com/vdmiitriva/BankProject" target="_blank" rel="noopener noreferrer">
+              Смотреть на GitHub <span aria-hidden="true">↗︎</span>
+            </a>
+          </div>
+        </article>
+
+        <article class="project-card project-burgundy">
+          <div class="project-top">
+            <span class="project-index">04 / TESTING</span>
+            <span class="project-label">Учебный проект</span>
+          </div>
+
+          <div class="project-symbol symbol-burgundy" aria-hidden="true">
+            <span>04</span>
+            <i></i>
+          </div>
+
+          <p class="project-category">ПРАКТИКА PYTHON</p>
+          <h3>Poetry Practice</h3>
+          <p class="project-description">
+            Учебный Python-проект для практики программирования,
+            закрепления навыков разработки и тестирования кода.
+          </p>
+
+          <ul class="tech-list">
+            <li>Python</li>
+            <li>pytest</li>
+            <li>Poetry</li>
+          </ul>
+
+          <div class="project-links">
+            <a class="project-link" href="https://github.com/vdmiitriva/poetry-practice" target="_blank" rel="noopener noreferrer">
+              Смотреть на GitHub <span aria-hidden="true">↗︎</span>
+            </a>
+          </div>
+        </article>
+      </div>
+
+      <div class="all-projects">
+        <span>Больше кода и учебных работ</span>
+        <a class="text-link" href="https://github.com/vdmiitriva" target="_blank" rel="noopener noreferrer">
+          GitHub <span aria-hidden="true">↗︎</span>
+        </a>
+      </div>
+    </section>
+
+    <section class="section about-section" id="about">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">НЕМНОГО ОБО МНЕ</p>
+          <h2>Учусь создавать<br>полезные вещи<span class="accent-dot">.</span></h2>
+        </div>
+      </div>
+
+      <div class="about-grid">
         <div class="about-copy">
-          <p>Я учусь backend-разработке и последовательно развиваю навыки Python, работы с базами данных и создания веб-приложений.</p>
-          <p>В учебных проектах уделяю внимание структуре кода, понятной организации проекта и возможности развивать его дальше. Сейчас мой основной проект — <a href="https://github.com/vdmiitriva/studyflow" target="_blank" rel="noopener noreferrer">StudyFlow <span aria-hidden="true">↗</span></a>.</p>
+          <p>
+            Я изучаю Python и backend-разработку. В учебных проектах
+            работаю с веб-фреймворками, базами данных и автоматизацией.
+          </p>
+          <p>
+            Сейчас мой основной фокус — StudyFlow: проект, на котором
+            я последовательно осваиваю разработку backend-приложения,
+            от архитектуры и базы данных до API и тестирования.
+          </p>
         </div>
-      </div>
-    </section>
 
-    <section class="content-section section-wrap" id="projects" aria-labelledby="projects-title">
-      <div class="section-label"><span>02</span> / ИЗБРАННЫЕ РАБОТЫ</div>
-      <div class="section-content">
-        <div class="section-heading-row">
-          <h2 id="projects-title">Проекты</h2>
-          <p>Учебные работы и проект в разработке</p>
-        </div>
-        <div class="projects-grid">
-          <article class="project-card">
-            <div class="project-topline"><span class="project-number">01</span><span class="project-type">PYTHON · DATA</span></div>
-            <h3>BankProject</h3>
-            <p class="project-description">Приложение для анализа банковских операций: поиск транзакций, формирование сводной информации о расходах и подготовка данных для отображения на главной странице.</p>
-            <ul class="tags" aria-label="Технологии"><li>Python</li><li>pandas</li><li>JSON</li><li>Excel</li></ul>
-            <div class="project-links"><a href="https://github.com/vdmiitriva/BankProject" target="_blank" rel="noopener noreferrer">Исходный код <span aria-hidden="true">↗</span></a></div>
-          </article>
-          <article class="project-card">
-            <div class="project-topline"><span class="project-number">02</span><span class="project-type">WEB · FLASK</span></div>
-            <h3>Eng Tenses</h3>
-            <p class="project-description">Веб-приложение для практики английской грамматики, созданное на Flask.</p>
-            <ul class="tags" aria-label="Технологии"><li>Python</li><li>Flask</li><li>HTML</li><li>CSS</li></ul>
-            <div class="project-links">
-              <a href="https://github.com/vdmiitriva/eng-tenses" target="_blank" rel="noopener noreferrer">Исходный код <span aria-hidden="true">↗</span></a>
-              <a href="https://eng-tenses.onrender.com/" target="_blank" rel="noopener noreferrer">Открыть сайт <span aria-hidden="true">↗</span></a>
-              <a href="https://t.me/EN_GameBot" target="_blank" rel="noopener noreferrer">Telegram-бот <span aria-hidden="true">↗</span></a>
+        <div class="skills-panel">
+          <p class="skills-title">ТЕХНОЛОГИИ И ИНСТРУМЕНТЫ</p>
+
+          <div class="skill-group">
+            <span class="skill-name">Языки</span>
+            <div class="skill-tags">
+              <span>Python</span>
+              <span>SQL</span>
+              <span>HTML</span>
+              <span>CSS</span>
             </div>
-          </article>
-          <article class="project-card">
-            <div class="project-topline"><span class="project-number">03</span><span class="project-type">PYTHON · TESTING</span></div>
-            <h3>Poetry Practice</h3>
-            <p class="project-description">Учебный Python-проект для практики программирования и закрепления навыков разработки и тестирования.</p>
-            <ul class="tags" aria-label="Технологии"><li>Python</li><li>pytest</li><li>Poetry</li></ul>
-            <div class="project-links"><a href="https://github.com/vdmiitriva/poetry-practice" target="_blank" rel="noopener noreferrer">Исходный код <span aria-hidden="true">↗</span></a></div>
-          </article>
-          <article class="project-card project-card-featured">
-            <div class="project-topline"><span class="project-number">04</span><span class="project-status"><span class="status-dot" aria-hidden="true"></span> ПРОЕКТ СЕМЕСТРА · в разработке</span></div>
-            <h3>StudyFlow</h3>
-            <p class="project-description">Персональный учебный помощник для управления задачами, сроками и учебным расписанием. Backend разрабатывается на FastAPI с использованием PostgreSQL и SQLAlchemy.</p>
-            <ul class="tags" aria-label="Технологии"><li>Python</li><li>FastAPI</li><li>PostgreSQL</li><li>SQLAlchemy</li><li>Alembic</li><li>pytest</li></ul>
-            <div class="project-links"><a href="https://github.com/vdmiitriva/studyflow" target="_blank" rel="noopener noreferrer">Исходный код <span aria-hidden="true">↗</span></a></div>
-          </article>
+          </div>
+
+          <div class="skill-group">
+            <span class="skill-name">Backend</span>
+            <div class="skill-tags">
+              <span>Flask</span>
+              <span>FastAPI</span>
+              <span>SQLAlchemy</span>
+              <span>Alembic</span>
+            </div>
+          </div>
+
+          <div class="skill-group">
+            <span class="skill-name">Данные</span>
+            <div class="skill-tags">
+              <span>PostgreSQL</span>
+              <span>pandas</span>
+              <span>JSON</span>
+              <span>Excel</span>
+            </div>
+          </div>
+
+          <div class="skill-group">
+            <span class="skill-name">Инструменты</span>
+            <div class="skill-tags">
+              <span>Git</span>
+              <span>GitHub</span>
+              <span>pytest</span>
+              <span>Poetry</span>
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
-    <section class="content-section section-wrap" id="skills" aria-labelledby="skills-title">
-      <div class="section-label"><span>03</span> / ИНСТРУМЕНТЫ</div>
-      <div class="section-content">
-        <div class="section-heading-row">
-          <h2 id="skills-title">Навыки</h2>
-          <p>Технологии, с которыми работаю или которые изучаю</p>
-        </div>
-        <div class="skills-list">
-          <div class="skill-row"><h3>Язык</h3><p>Python</p></div>
-          <div class="skill-row"><h3>Backend</h3><p>Flask <span>·</span> FastAPI</p></div>
-          <div class="skill-row"><h3>Базы данных</h3><p>PostgreSQL <span>·</span> SQL</p></div>
-          <div class="skill-row"><h3>Работа с данными</h3><p>pandas <span>·</span> JSON <span>·</span> Excel</p></div>
-          <div class="skill-row"><h3>Инструменты</h3><p>Git <span>·</span> GitHub <span>·</span> pytest <span>·</span> Poetry <span>·</span> Alembic <span>·</span> SQLAlchemy</p></div>
-        </div>
-      </div>
-    </section>
-
-    <section class="contact-section section-wrap" id="contacts" aria-labelledby="contacts-title">
-      <div class="section-label"><span>04</span> / КОНТАКТЫ</div>
-      <div class="contact-content">
-        <p class="contact-kicker">ОТКРЫТА К НОВЫМ ЗНАКОМСТВАМ</p>
-        <h2 id="contacts-title">Давайте<br><span>знакомиться.</span></h2>
-        <div class="contact-bottom">
-          <p>Мой код и учебные проекты доступны на GitHub.</p>
-          <a class="contact-link" href="https://github.com/vdmiitriva" target="_blank" rel="noopener noreferrer">github.com/vdmiitriva <span aria-hidden="true">↗</span></a>
-        </div>
-      </div>
+    <section class="contact-section section" id="contacts">
+      <p class="eyebrow">СВЯЗЬ</p>
+      <h2>Продолжаю учиться.<br>Продолжаю создавать<span class="accent-dot">.</span></h2>
+      <p class="contact-description">
+        Все мои проекты и исходный код доступны на GitHub.
+      </p>
+      <a class="button button-light" href="https://github.com/vdmiitriva" target="_blank" rel="noopener noreferrer">
+        Перейти на GitHub <span aria-hidden="true">↗︎</span>
+      </a>
     </section>
   </main>
 
-  <footer class="site-footer section-wrap">
-    <a class="wordmark footer-mark" href="#top" aria-label="Наверх">V.D<span>.</span></a>
-    <p>© 2026 Viktoriia · Built with care</p>
-    <a href="https://github.com/vdmiitriva" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a>
+  <footer class="footer">
+    <a class="logo footer-logo" href="#home" aria-label="На главную">V</a>
+    <span>Виктория · Python Backend Developer</span>
+    <span>© 2026</span>
   </footer>
+
+  <script>
+    (() => {
+      const typingText = document.getElementById("typing-text");
+      const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
+
+      if (!typingText || reduceMotion.matches) return;
+
+      const phrases = [
+        "Python-разработчик.",
+        "Создаю backend.",
+        "Изучаю новые технологии."
+      ];
+
+      let phraseIndex = 0;
+      let charIndex = phrases[0].length;
+      let deleting = true;
+      let timeoutId;
+
+      function type() {
+        if (reduceMotion.matches) return;
+
+        const phrase = phrases[phraseIndex];
+
+        if (deleting) {
+          charIndex--;
+          typingText.textContent = phrase.slice(0, charIndex);
+
+          if (charIndex === 0) {
+            deleting = false;
+            phraseIndex = (phraseIndex + 1) % phrases.length;
+            timeoutId = setTimeout(type, 450);
+            return;
+          }
+
+          timeoutId = setTimeout(type, 48);
+        } else {
+          const nextPhrase = phrases[phraseIndex];
+          charIndex++;
+          typingText.textContent = nextPhrase.slice(0, charIndex);
+
+          if (charIndex === nextPhrase.length) {
+            deleting = true;
+            timeoutId = setTimeout(type, 2200);
+            return;
+          }
+
+          timeoutId = setTimeout(type, 78);
+        }
+      }
+
+      timeoutId = setTimeout(type, 2200);
+
+      reduceMotion.addEventListener("change", event => {
+        if (event.matches) {
+          clearTimeout(timeoutId);
+          typingText.textContent = phrases[phraseIndex];
+        }
+      });
+    })();
+  </script>
 </body>
 </html>
